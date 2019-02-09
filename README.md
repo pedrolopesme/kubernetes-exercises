@@ -36,6 +36,22 @@ Update POD using `yaml`:
 # kubectl apply -f pod-definition.yml
 ```
 
+### rc-definition.yml:
+Create from `yaml`
+```
+$ kubectl create -f rc-definition.yml
+```
+
+Update replication controller using `yaml`:
+```
+# kubectl apply -f rc-definition.yml
+```
+
+List replication controllers
+```
+$ kubectl get replicationcontroller
+```
+
 ### Others
 
 #### Dashboard
