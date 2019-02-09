@@ -44,13 +44,47 @@ $ kubectl create -f rc-definition.yml
 
 Update replication controller using `yaml`:
 ```
-# kubectl apply -f rc-definition.yml
+# kubectl replace -f rc-definition.yml
 ```
 
 List replication controllers
 ```
 $ kubectl get replicationcontroller
 ```
+
+### replicaset-definition.yml:
+Create from `yaml`
+```
+$ kubectl create -f replicaset-definition.yml
+```
+
+Update replica set using `yaml`:
+```
+# kubectl replace -f replicaset-definition.yml
+```
+
+Delete:
+```
+# kubectl delete replicaset myapp-replicaset
+```
+
+Edit:
+```
+# kubectl edit replicaset myapp-replicaset
+```
+
+List replica set
+```
+$ kubectl get replicaset
+```
+
+To scale:
+```
+$ kubectl scale --replicas=6 -f replicaset-definition.yml
+```
+
+or using replicaset name:
+$ kubectl scale --replicas=6 replicaset myapp-replicaset
 
 ### Others
 
