@@ -86,6 +86,13 @@ $ kubectl scale --replicas=6 -f replicaset-definition.yml
 or using replicaset name:
 $ kubectl scale --replicas=6 replicaset myapp-replicaset
 
+### deployment-definition.yml:
+Apply from `yaml`
+```
+$ kubectl apply -f deployment-definition.yml
+```
+
+
 ### Others
 
 #### Dashboard
