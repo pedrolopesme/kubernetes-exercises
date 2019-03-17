@@ -11,3 +11,6 @@ spec:
       image: nginx
       commands: ["ls"]
       args: ["-la"]
+      env:
+        - name: APP_COLOR
+          value: pink
