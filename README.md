@@ -118,6 +118,12 @@ Get resources from all namespaces:
 $ kubectl get pods --all-namespaces
 ```
 
+### resource-quota.yml:
+Create from `yaml`
+```
+$ kubectl apply -f resource-quota.yml
+```
+
 ### Others
 
 #### Dashboard
