@@ -92,6 +92,31 @@ Apply from `yaml`
 $ kubectl apply -f deployment-definition.yml
 ```
 
+### namespace-definition.yml:
+Create `dev` from `yaml`
+```
+$ kubectl apply -f namespace-definition.yml
+```
+
+Create `dev` from kubectl:
+```
+$ kubectl create namespace dev
+```
+
+Get resources from a specific namespace:
+```
+$ kubectl get pods --namespace=dev
+```
+
+Switching permanently to another namespace:
+```
+$ kubectl config set-context $(kubectl config current-context) --namespace=dev
+```
+
+Get resources from all namespaces:
+```
+$ kubectl get pods --all-namespaces
+```
 
 ### Others
 
