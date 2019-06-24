@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Service
+metadata:
+  name: myapp-backend
+spec:
+  type: ClusterIP
+  ports:
+    - targetPorts: 80   
+      port: 80         
+  selector:
+    app: myapp
+    type: front-end

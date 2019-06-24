@@ -22,6 +22,32 @@ Run a POD from a docker image
 ```
 $ kubectl run nginx --image nginx
 ```
+### Service NodePort:
+
+Create from `yaml`
+
+```
+$ kubectl create -f service-nodeport-definition.yaml
+```
+
+List services
+```
+$ kubectl get services
+```
+
+### Service Cluster IP:
+
+Create from `yaml`
+
+```
+$ kubectl create -f service-clusterip-definition.yaml
+```
+
+List services
+```
+$ kubectl get services
+```
+
 
 
 ### pod-configuration.yml:
