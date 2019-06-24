@@ -36,6 +36,20 @@ Update POD using `yaml`:
 # kubectl apply -f pod-definition.yml
 ```
 
+### [cron]job-definition.yml 
+
+Create from `yaml`
+```
+$ kubectl create -f [cron]job-definition.yml
+```
+
+Update POD using `yaml`:
+```
+# kubectl apply -f [cron]job-definition.yml
+```
+
+
+
 ### rc-definition.yml:
 Create from `yaml`
 ```
@@ -216,3 +230,8 @@ $ kubectl describe deployment
 * blue/green: release a new version alongside the old version then switch traffic
 * canary: release a new version to a subset of users, then proceed to a full rollout
 * a/b testing: release a new version to a subset of users in a precise way (HTTP headers, cookie, weight, etc.). A/B testing is really a technique for making business decisions based on statistics but we will briefly describe the process. This doesn’t come out of the box with Kubernetes, it implies extra work to setup a more advanced infrastructure (Istio, Linkerd, Traefik, custom nginx/haproxy, etc).
+
+#### Restart Policy
+
+Possible values Always, OnFailure, and Never. The default value is Always.
+
