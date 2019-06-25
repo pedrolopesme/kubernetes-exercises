@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-myapp
+spec:
+  rules:
+    - host: www.myapp.com  # if there's only one host, you can ignore this entry
+      http:
+        paths:
+          - path: /first-path
+            backend:
+              serviceName: myapp-service
+              servicePort: 80
+          - path: /second-path
+            backend:
+              serviceName: myapp-service
+              servicePort: 80
+   - host: demo.myapp.com
+      http:
+        paths:
+          - path: /first-path
+            backend:
+              serviceName: myapp-service
+              servicePort: 80
+          - path: /second-path
+            backend:
+              serviceName: myapp-service
+              servicePort: 80

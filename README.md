@@ -261,3 +261,22 @@ $ kubectl describe deployment
 
 Possible values Always, OnFailure, and Never. The default value is Always.
 
+
+### Ingress 
+
+#### Controller
+
+Using NGINX as ingress controller:
+* Deployment: nginx-ingress-controller.yaml
+* Service: nginx-nodeport-service.yaml
+* ConfigMap: nginx-configuration.yaml
+* Auth: nginx-serviceaccount.yaml
+
+#### Resource
+
+Example for a demo app called `myapp` : ingress-sample-resource-to-myapp.yaml. Another exeample using paths is located at ingress-sample-resource-to-myapp-with-rules.yaml.
+
+To get all ingress services:
+```
+$ kubectl describe ingress ingress-myapp
+```
