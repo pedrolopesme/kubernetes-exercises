@@ -280,3 +280,8 @@ To get all ingress services:
 ```
 $ kubectl describe ingress ingress-myapp
 ```
+
+#### Network Policy
+
+`ingress-networkpolicy.yaml`
+
