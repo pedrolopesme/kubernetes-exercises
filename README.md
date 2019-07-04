@@ -285,3 +285,20 @@ $ kubectl describe ingress ingress-myapp
 
 `ingress-networkpolicy.yaml`
 
+
+### Volumes:
+
+To list volumes: 
+```
+$ kubelctl get volume
+$ kubelctl get persistentvolume
+```
+To list claims:
+```
+$ kubectl get persistentvolumeclaim
+```
+
+
+* efemeral: `volumes.yml`
+* persistent: `persistent-volume.yml` 
+* persistent claims: `persistent-volume-claim.yml`
