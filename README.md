@@ -1,6 +1,18 @@
 # kubernetes-exercises
 Forget it. Its not for you. Just some kubernetes configuration exercises.
 
+### Kubernetes shortcuts:
+
+* po : PODS
+* rs: replicasets
+* deploy: deployments
+* svc : services
+* ns : namespaces
+* netpol: network policies
+* pv: persistent volumes
+* pvc: persistent volume claims
+* sa : service accounts
+
 ### general cmds
 
 List PODs:
